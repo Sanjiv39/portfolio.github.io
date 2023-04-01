@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="run.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="original_dp.jpg" alt="DP">
+            <ul id="navbar">
+                <li><a href="#header" class="hov">Home</a></li>
+                <li><a href="#about" class="hov">About</a></li>
+                <li><a href="#services" class="hov">Skills</a></li>
+                <li><a href="#projects" class="hov">Projects</a></li>
+                <li><a href="#" class="hov">Contact</a></li>
+            </ul>
+            <button type="button" onclick="run()" id="btn">Click</button>
+        </nav>
+        <div class="header-text hidden">
+            <h2>Hey, This is<br><span>Sanjiv</span></h2>
+        </div>
+    </div>
+</div>
+<!-- About -->
+<div id="about">
+    <div class="container hidden">
+        <div class="row">
+            <div class="about-col-1">
+                <h2 class="sub-title">About Me</h2>
+                <p></p>
+                <div class="tab-title">
+                    <button type="button" class="tab-link" onclick="enable('skills')">Skills</button>
+                    <button type="button" class="tab-link" onclick="enable('experience')">Experience</button>
+                    <button type="button" class="tab-link" onclick="enable('education')">Education</button>
+                </div>
+                <div class="tab-content active" id="skills" >
+                    <ul>
+                        <li><span>HTML</span><br>Basic HTML with content layout</li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience" >
+                    <ul>
+                        <li><span>Experience</span><br>Basic HTML with content layout</li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education" >
+                    <ul>
+                        <li><span>Education</span><br>Basic HTML with content layout</li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services -->
+<div id="services">
+    <div class="container hidden">
+        <h2 class="sub-title">Skills</h2>
+        <div class="tabs">
+            <div class="tab" id="html"><p>HTML</p><span></span></div>
+            <div class="tab" id="css"><p>CSS</p><span></span></div>
+            <div class="tab" id="js"><p>Javascript</p><span></span></div>
+        </div>
+    </div>
+</div>
+<!-- Projects -->
+<div id="projects">
+    <div class="container hidden">
+        <div class="sub-title">
+            Project
+        </div>
+    </div>
+</div>
+<script src="run.js"></script>
+</body>
+</html>
